@@ -1,7 +1,10 @@
 import 'dart:convert';
 
+
 import 'package:http/http.dart' as http;
-Future<List<String>> fetchDataMethod()async{
+class Datafetchrepo
+{
+static Future<List<String>> fetchDataMethod()async{
   var client = http.Client();
   List<String> facts;
 try {
@@ -23,4 +26,4 @@ try {
   client.close();
 }
   return facts;
-}
+}}
